@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashween Singh - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="Ashween.jpg" alt="Ashween Singh">
+  <h1 class="fade-in">Ashween Singh</h1>
+  <p class="fade-in">SEO Specialist | Content Writer | Public Speaker</p>
+  <a href="resume.pdf" class="resume-btn glow" download>Download Resume</a>
+</header>
+
+<div class="logo-ribbon">
+    <div class="logo-track">
+      <img src="handm.jpg" alt="HandM">
+      <img src="mcdonalds.jpg" alt="McDonald's">
+      <img src="burgerking.png" alt="Burger King">
+      <img src="Rigi.png" alt="Rigi">
+      <img src="tatacliq.jpg" alt="Tata Cliq">
+      <img src="pocketfm.jpg" alt="Pocket FM">
+      <img src="truecaller.jpg" alt="Truecaller">
+      <img src="canarabank.jpg" alt="Canara Bank">
+    </div>
+  </div>
+  
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <p class="content">I'm <strong>Ashween Singh</strong>, passionate about SEO, content writing, public speaking, and digital marketing. A tech enthusiast currently pursuing B.Tech in Computer Science. I thrive on creativity, leadership, and making an impact!</p>
+</section>
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <ul>
+    <li>SEO Optimization, Content Strategy, Digital Marketing</li>
+    <li>Public Speaking, Event Management</li>
+    <li>Python, C++, JavaScript, PHP</li>
+    <li>Web Development (HTML, CSS, Bootstrap, React)</li>
+    <li>Database Management (MySQL, MongoDB)</li>
+  </ul>
+</section>
+
+<section id="projects" class="reveal">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Number Guessing Game:</strong> A fun and interactive game where users guess a randomly generated number.</li>
+      <li><strong>TodoTool:</strong> A simple yet powerful to-do list app to manage daily tasks and improve productivity.</li>
+      <li><strong>TrueFriends.com:</strong> A friendship-based social platform to connect and interact with real friends.</li>
+    </ul>
+  </section>
+  
+
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <ul>
+    <li>SEO Associate - <a href="https://www.socialmediadissect.com/" target="_blank">Social Media Dissect, Mumbai</a></li>
+    <li>SEO Intern - <a href="https://invoratech.com/" target="_blank">Invora Technologies, New Jersey</a></li>
+    <li>SEO Content Writer - <a href="https://www.wecreateproblems.com/" target="_blank">We Create Problems (WeCP), Bangalore</a></li>
+    <li>Content Writer Intern - <a href="http://hypindia.in/" target="_blank">Hypindia</a></li>
+    <li>Community Manager - <a href="https://engineerscradle.com/" target="_blank">Engineer's Cradle, Pune</a></li>
+  </ul>
+</section>
+
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <ul>
+    <li>B.Tech in Computer Science - LPU (2022-2026)</li>
+    <li>Senior Secondary (91%) - APS Lucknow</li>
+    <li>Matriculation (78%) - APS Lucknow</li>
+  </ul>
+</section>
+
+<section id="achievements" class="reveal">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Winner - National Youth Parliament 2024</li>
+    <li>Hosted & Managed 100+ College Events</li>
+    <li>Public Speaking Lead - ApnaCollegeLPU</li>
+    <li>3rd Place - LPU Hackathon</li>
+    <li>PR Lead - SCSE LPU</li>
+  </ul>
+</section>
+
+<section id="certificates" class="reveal">
+  <h2>Certificates</h2>
+  <ul>
+    <li>DSA with C++ - CipherSchools</li>
+    <li>DevOps Foundation - LinkedIn</li>
+    <li>Mastering Data Structures - C/C++</li>
+  </ul>
+</section>
+
+<section id="contact" class="reveal">
+  <h2>Connect With Me</h2>
+  <p class="content">Email: <a href="mailto:work.ashweensingh@gmail.com">work.ashweensingh@gmail.com</a></p>
+  <p class="content">GitHub: <a href="https://github.com/Ashween21" target="_blank">Ashween21</a></p>
+  <p class="content">LinkedIn: <a href="https://www.linkedin.com/in/ashweensingh2109" target="_blank">ashweensingh2109</a></p>
+</section>
+
+<footer>
+  &copy; 2025 Ashween Singh | Designed with passion.
+</footer>
+
+<script>
+// Smooth reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add('active');
+    } else {
+      reveals[i].classList.remove('active');
+    }
+  }
+});
+</script>
+
+</body>
+</html>
